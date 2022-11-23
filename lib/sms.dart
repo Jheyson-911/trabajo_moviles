@@ -33,7 +33,7 @@ class _SmsAppState extends State<SmsApp> {
     try {
       String _result = await sendSMS(
         message: _controllerMessage.text,
-        recipients: ["902401714"],
+        recipients: recipients,
         sendDirect: sendDirect,
       );
       setState(() => _message = _result);
