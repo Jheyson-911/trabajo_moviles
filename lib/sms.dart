@@ -91,7 +91,7 @@ class _SmsAppState extends State<SmsApp> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('SMS/MMS Example'),
+            title: const Text('Mensajes'),
           ),
           body: ListView(
             children: <Widget>[
@@ -140,27 +140,27 @@ class _SmsAppState extends State<SmsApp> {
                 ),
               ),
               const Divider(),
-              ListTile(
-                title: const Text('Can send SMS'),
-                subtitle: Text(_canSendSMSMessage),
-                trailing: IconButton(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  icon: const Icon(Icons.check),
-                  onPressed: () {
-                    _canSendSMS();
-                  },
-                ),
-              ),
-              SwitchListTile(
-                  title: const Text('Send Direct'),
-                  subtitle: const Text(
-                      'Should we skip the additional dialog? (Android only)'),
-                  value: sendDirect,
-                  onChanged: (bool newValue) {
-                    setState(() {
-                      sendDirect = newValue;
-                    });
-                  }),
+              // ListTile(
+              //   title: const Text('Can send SMS'),
+              //   subtitle: Text(_canSendSMSMessage),
+              //   trailing: IconButton(
+              //     padding: const EdgeInsets.symmetric(vertical: 16),
+              //     icon: const Icon(Icons.check),
+              //     onPressed: () {
+              //       _canSendSMS();
+              //     },
+              //   ),
+              // ),
+              // SwitchListTile(
+              //     title: const Text('Send Direct'),
+              //     subtitle: const Text(
+              //         'Should we skip the additional dialog? (Android only)'),
+              //     value: sendDirect,
+              //     onChanged: (bool newValue) {
+              //       setState(() {
+              //         sendDirect = newValue;
+              //       });
+              //     }),
               Padding(
                 padding: const EdgeInsets.all(8),
                 child: ElevatedButton(

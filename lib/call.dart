@@ -26,7 +26,7 @@ class _CallState extends State<Call> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Llamadas'),
         ),
         body: Column(
           children: <Widget>[
